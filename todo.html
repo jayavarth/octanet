@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div id="app">
+        <h1>To-Do List</h1>
+        <div>
+            <label for="taskInput">Task:</label>
+            <input type="text" id="taskInput" placeholder="Enter task">
+            
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate">
+            
+            <label for="status">Status:</label>
+            <select id="status">
+                <option value="pending">Pending</option>
+                <option value="inprogress">In Progress</option>
+            </select>
+
+            <label for="priority">Priority:</label>
+            <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <label for="category">Category:</label>
+            <input type="text" id="category" placeholder="Enter category">
+            
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
